@@ -1,0 +1,158 @@
+<title>Reporte con Play</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap">
+<style>
+/* Concepto: reporte mensual de cliente con una "tarjeta de ruta" que se puede escuchar. Marca COSMART: brújula, viajeros, destinos. */
+:root{
+  --bg:#F8F8F6; --surface:#FFFFFF; --fg:#10203F; --muted:#5B6578; --line:#E3DED5;
+  --navy:#0D2B6B; --blue:#1A4DAA; --sky:#3A8FC7; --red:#E02020; --cream:#F2EDE6;
+  --on-navy:#FFFFFF; --on-navy-soft:#C9D6F0; --hl:#FFE9A8; --hl-fg:#0D2B6B;
+  --display:'Playfair Display',Georgia,serif; --body:'DM Sans',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#080D1A; --surface:#0D1425; --fg:#F0EDE8; --muted:#9AA6BF; --line:#1C2745;
+  --navy:#0D2B6B; --blue:#4F82D9; --sky:#5FB0E4; --cream:#1A2238; --hl:#2A4A8F; --hl-fg:#FFFFFF; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#080D1A; --surface:#0D1425; --fg:#F0EDE8; --muted:#9AA6BF; --line:#1C2745;
+  --navy:#0D2B6B; --blue:#4F82D9; --sky:#5FB0E4; --cream:#1A2238; --hl:#2A4A8F; --hl-fg:#FFFFFF; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;margin:0;padding-inline:16px;padding-block:0 48px}
+.wrap{max-width:760px;margin-inline:auto}
+header.top{background:var(--navy);color:var(--on-navy);margin-inline:-16px;padding:18px 16px}
+header.top .in{max-width:760px;margin-inline:auto;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:.02em;color:var(--on-navy)}
+.brand small{display:block;font-family:var(--body);font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy-soft)}
+.meta{font-size:13px;color:var(--on-navy-soft);text-align:right}
+h1{font-family:var(--display);font-size:clamp(26px,5vw,36px);line-height:1.15;margin:28px 0 4px;text-wrap:balance}
+.sub{color:var(--muted);margin:0 0 24px}
+.example{display:inline-block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);color:var(--muted);padding:3px 8px;border-radius:4px;margin-bottom:12px}
+.player{background:var(--navy);color:var(--on-navy);border-radius:14px;padding:20px;margin-bottom:28px}
+.player h2{font-family:var(--display);font-size:20px;margin:0 0 4px;color:var(--on-navy)}
+.player .lead{color:var(--on-navy-soft);font-size:14px;margin:0 0 16px}
+.row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+button{font:inherit;cursor:pointer}
+button:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+.play{width:56px;height:56px;border-radius:50%;border:0;background:var(--red);color:#fff;display:grid;place-items:center;flex:none}
+.play:hover{filter:brightness(1.08)}
+.play svg{width:24px;height:24px;fill:#fff}
+.btn{background:transparent;border:1px solid var(--on-navy-soft);color:var(--on-navy);border-radius:8px;padding:8px 14px;min-height:40px}
+.btn:hover{background:rgba(255,255,255,.1)}
+.btn[aria-pressed="true"]{background:var(--on-navy);color:var(--navy)}
+.bar{flex:1;min-width:140px;height:6px;background:rgba(255,255,255,.2);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--sky);transition:width .3s}
+.tone{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 0}
+.script{background:rgba(255,255,255,.08);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:16px;color:var(--on-navy)}
+.script span{padding:1px 2px;border-radius:3px;transition:background .2s}
+.script span.on{background:var(--hl);color:var(--hl-fg)}
+.status{font-size:13px;color:var(--on-navy-soft);margin-top:10px;min-height:1.2em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card .k{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card .v{font-family:var(--display);font-size:30px;font-weight:700;color:var(--fg);font-variant-numeric:tabular-nums}
+.card .d{font-size:14px;color:var(--blue)}
+.next{background:var(--cream);border-radius:12px;padding:16px 18px;color:var(--fg)}
+.next h3{font-family:var(--display);margin:0 0 6px;font-size:18px}
+.next p{margin:0}
+.foot{margin-top:28px;font-size:13px;color:var(--muted)}
+.theme{background:transparent;border:1px solid var(--on-navy-soft);color:var(--on-navy);border-radius:6px;padding:4px 10px;font-size:13px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top"><div class="in">
+    <div class="brand">COSMART<small>Tu brújula de crecimiento</small></div>
+    <div class="meta">Reporte mensual · Septiembre 2026<br><button class="theme" id="themeBtn" type="button">Cambiar tema</button></div>
+  </div></header>
+
+  <h1>Cómo fue este tramo del viaje</h1>
+  <p class="sub">Cliente de ejemplo: Estudio Aurora</p>
+  <span class="example">Datos de ejemplo para la vista previa</span>
+
+  <section class="player" aria-label="Explicación del reporte en audio">
+    <h2>Escuchá la explicación</h2>
+    <p class="lead">Un resumen en voz de lo que pasó este mes, para entenderlo en un minuto.</p>
+    <div class="row">
+      <button class="play" id="play" type="button" aria-label="Reproducir explicación">
+        <svg id="icoPlay" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <svg id="icoPause" viewBox="0 0 24 24" hidden><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+      </button>
+      <div class="bar" aria-hidden="true"><i id="prog"></i></div>
+      <button class="btn" id="stop" type="button">Detener</button>
+      <button class="btn" id="speed" type="button" aria-label="Velocidad">1x</button>
+    </div>
+    <div class="tone" role="group" aria-label="Versión del texto">
+      <button class="btn" id="tCos" type="button" aria-pressed="true">Versión COSMART (viaje)</button>
+      <button class="btn" id="tNeu" type="button" aria-pressed="false">Versión otras agencias</button>
+    </div>
+    <div class="script" id="script" aria-live="polite"></div>
+    <div class="status" id="status"></div>
+  </section>
+
+  <div class="grid">
+    <div class="card"><div class="k">Alcance</div><div class="v">12.480</div><div class="d">▲ 18% vs. agosto</div></div>
+    <div class="card"><div class="k">Visitas al perfil</div><div class="v">1.320</div><div class="d">▲ 24% vs. agosto</div></div>
+    <div class="card"><div class="k">Videos cortos</div><div class="v">9</div><div class="d">Lo que mejor funcionó</div></div>
+  </div>
+
+  <div class="next"><h3>Próxima escala</h3><p>Más videos cortos durante octubre y una publicación semanal con testimonios.</p></div>
+  <p class="foot">Vista previa. Los textos del audio los escribe la IA con los datos reales del reporte y los revisa Vaneh antes de publicarse.</p>
+</div>
+
+<script>
+var TEXTS={
+ cos:["Hola, ¿cómo estás?","Te cuento cómo fue este tramo del viaje.","Tus publicaciones llegaron a más personas que el mes pasado, y eso se nota en que más gente se acercó a tu perfil: estás sumando nuevos compañeros de ruta.","Lo que mejor funcionó fueron los videos cortos, así que ese es el camino que vamos a seguir recorriendo.","El mes que viene hacemos más de esos y seguimos acercándonos a tu destino.","Cualquier duda, escribinos."],
+ neu:["Hola, te cuento cómo te fue este mes.","Tus publicaciones llegaron a más personas que el mes pasado, y eso se nota en que más gente visitó tu perfil.","Lo que más funcionó fueron los videos cortos.","El mes que viene vamos a hacer más de esos.","Cualquier duda, escribinos."]
+};
+var mode='cos', idx=0, playing=false, paused=false, rate=1, spans=[];
+var $=function(id){return document.getElementById(id)};
+var synth=window.speechSynthesis, supported=!!(synth&&window.SpeechSynthesisUtterance);
+function render(){
+  var s=$('script'); s.innerHTML=''; spans=[];
+  TEXTS[mode].forEach(function(t,i){var sp=document.createElement('span');sp.textContent=t+' ';s.appendChild(sp);spans.push(sp)});
+  setProg(0);
+}
+function setProg(n){$('prog').style.width=(n/TEXTS[mode].length*100)+'%'}
+function mark(i){spans.forEach(function(s,k){s.classList.toggle('on',k===i)})}
+function icons(){$('icoPlay').hidden=playing&&!paused;$('icoPause').hidden=!(playing&&!paused);
+  $('play').setAttribute('aria-label',playing&&!paused?'Pausar explicación':'Reproducir explicación')}
+function pickVoice(){
+  var v=synth.getVoices();
+  return v.find(function(x){return /es-AR/i.test(x.lang)})||v.find(function(x){return /^es/i.test(x.lang)})||null;
+}
+function speak(){
+  if(idx>=TEXTS[mode].length){finish();return}
+  mark(idx); setProg(idx);
+  var u=new SpeechSynthesisUtterance(TEXTS[mode][idx]);
+  var v=pickVoice(); if(v){u.voice=v;u.lang=v.lang}else{u.lang='es-AR'}
+  u.rate=rate;
+  u.onend=function(){if(playing&&!paused){idx++;speak()}};
+  u.onerror=function(e){if(e.error!=='canceled'&&e.error!=='interrupted'){$('status').textContent='No se pudo reproducir el audio en este navegador.';reset()}};
+  synth.speak(u);
+}
+function finish(){setProg(TEXTS[mode].length);mark(-1);playing=false;paused=false;idx=0;icons();$('status').textContent='Listo. Podés escucharlo de nuevo cuando quieras.'}
+function reset(){try{synth.cancel()}catch(e){};playing=false;paused=false;idx=0;mark(-1);setProg(0);icons()}
+$('play').onclick=function(){
+  if(!supported){$('status').textContent='Tu navegador no tiene voz integrada. Probá desde Chrome o Safari.';return}
+  $('status').textContent='';
+  if(!playing){playing=true;paused=false;icons();synth.cancel();speak()}
+  else if(!paused){paused=true;synth.cancel();icons()}   /* pausa: corta la frase y retoma desde esa frase */
+  else{paused=false;icons();speak()}
+};
+$('stop').onclick=function(){reset();$('status').textContent=''};
+$('speed').onclick=function(){
+  var r=[1,1.25,1.5,0.85]; rate=r[(r.indexOf(rate)+1)%r.length]; $('speed').textContent=(rate===0.85?'0.85':rate)+'x';
+  if(playing&&!paused){synth.cancel();speak()}
+};
+function setMode(m){
+  mode=m; reset(); render();
+  $('tCos').setAttribute('aria-pressed',m==='cos'); $('tNeu').setAttribute('aria-pressed',m==='neu');
+}
+$('tCos').onclick=function(){setMode('cos')};
+$('tNeu').onclick=function(){setMode('neu')};
+$('themeBtn').onclick=function(){
+  var r=document.documentElement, dark=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme:dark)').matches);
+  r.setAttribute('data-theme',dark?'light':'dark');
+};
+if(supported){synth.getVoices(); if(synth.onvoiceschanged!==undefined)synth.onvoiceschanged=function(){}}
+render(); icons();
+if(!supported)$('status').textContent='Tu navegador no tiene voz integrada. Probá desde Chrome o Safari.';
+</script>
