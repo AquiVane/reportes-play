@@ -1,10 +1,11 @@
 # HANDOFF — Apps para emprendedores (diseño y estado)
 *Actualizado: 13/10/2026 · Pide: Vaneh · Idioma: español rioplatense*
 
-## DECISIONES NUEVAS (13/10) — mandan sobre todo lo demás
-- **"Al Día" NO va como marca.** Claude Design propuso ese nombre y Vaneh lo descartó.
-- **Las apps viven dentro de `apps.vamatienda.com.ar`** (dominio de VAMA). Pendiente de definir con Vaneh: qué nombre/identidad llevan ahora y cómo se organizan las rutas o subdominios de cada app.
-- El diseño visual (paleta, tipografías, símbolo, componentes) que entregó Claude Design está en `referencia-diseno/Branding_Apps.dc.html`. Queda como referencia VISUAL; el nombre "Al Día" y el chip "Al Día Voz" hay que reemplazarlos cuando Vaneh defina cómo se llaman.
+## DECISIONES (13/10) — mandan sobre todo lo demás
+- **Marca paraguas: "Al Día"**, con 3 apps: **Al Día Cobros**, **Al Día Voz** y **Al Día IA** (confirmado por Vaneh el 13/10; hubo una confusión pasajera donde la descartó por error). Alternativas que propuso Claude Design y NO se eligieron: Dale, Tranqui, Cuentas Claras, Puntual.
+- **Las apps viven dentro de `apps.vamatienda.com.ar`** (dominio de VAMA), pero NO llevan la marca VAMA: la identidad es Al Día. Pendiente de definir: rutas o subdominios de cada app.
+- Identidad visual aprobada: dirección 1a "Terracota" (ver `referencia-diseno/Branding_Apps.dc.html`). Gabarito + Figtree, terracota #B4452A, mostaza #E2A33A.
+- Pendiente de Vaneh antes de publicar: registro de marca de "Al Día" en AR, CL y UY (Claude Design no lo verificó).
 
 ## Contexto
 Vaneh tiene una agencia de marketing (COSMART) y lanza 3 apps baratas e independientes para emprendedores y pymes de Latinoamérica. NADA de COSMART en estas apps: ni nombre, ni logo, ni azul marino (#0D2B6B y familia), ni brújula/viajes.
@@ -25,7 +26,7 @@ Inicial USD 3/mes (hasta 20 clientes) · Plus USD 5/mes (hasta 50) · Pro USD 8/
 - La explicación del Play se arma con plantillas y los datos reales del panel (sin IA ni costo) y lleva aviso de "generado automáticamente, puede cometer errores". Vaneh NO revisa cada texto.
 
 ## Estado (13/10)
-- Preview de la tarjeta ▶ con la estética de Claude Design (todavía con el chip "Al Día Voz" a reemplazar): https://claude.ai/artifact/Qz2Xi1nEYfc7ThTwdmQdCB
+- Preview de la tarjeta ▶ con la estética de Claude Design (con el chip "Al Día Voz", correcto): https://claude.ai/artifact/Qz2Xi1nEYfc7ThTwdmQdCB
 - La tarjeta nueva está en el código del Hub (rama `claude/play-reportes`), SIN mergear a main.
-- Falta: definir nombre/ubicación bajo `apps.vamatienda.com.ar`, landing de Cobros (preview), login, pantalla Clientes y ficha, mails de recordatorio y cumpleaños.
+- Falta: definir rutas bajo `apps.vamatienda.com.ar`, landing de Cobros (preview), login, pantalla Clientes y ficha, mails de recordatorio y cumpleaños.
 - Investigación: hay competidores en recordatorios de cobro (Wati, Leadsales, YoFacturo) y en monitor de marca en IA (Ahrefs Brand Radar USD 50-699/mes). El hueco es precio bajo, simpleza y español local.
