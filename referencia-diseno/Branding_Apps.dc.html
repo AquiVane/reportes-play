@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=Young+Serif&family=Onest:wght@400;500;700&family=Instrument+Serif&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<style>
+body{margin:0;background:#ECE6DE;color:#2A1E18;font-family:'Figtree',system-ui,sans-serif}
+*{box-sizing:border-box}
+a{color:#B4452A}a:hover{color:#963820}
+input::placeholder{color:#8A7A6E}
+</style>
+</helmet>
+
+<div style="padding:56px;display:flex;flex-direction:column;gap:88px;width:1400px">
+
+<header style="display:flex;flex-direction:column;gap:10px;max-width:900px">
+  <div style="font:600 13px/1 'Figtree';letter-spacing:.16em;text-transform:uppercase;color:#6B5B50">Branding · 3 apps para emprendedores · Proyecto independiente</div>
+  <h1 style="margin:0;font:800 56px/1.02 'Gabarito';color:#2A1E18;letter-spacing:-.02em;text-wrap:balance">Nombre, identidad y primeras pantallas</h1>
+  <p style="margin:0;font-size:19px;line-height:1.5;color:#6B5B50;text-wrap:pretty">A · nombres · B · 3 direcciones de identidad · C · landing y app de cobros · D · la familia de apps · E · tarjeta del botón ▶. La recomendada es <a href="#1a">1a</a>; C, D y E están hechas con esa identidad.</p>
+</header>
+
+<section id="A" style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;align-items:baseline;gap:14px"><span style="font:800 15px 'Gabarito';background:#2A1E18;color:#fff;padding:6px 10px;border-radius:8px">A</span><h2 style="margin:0;font:700 32px 'Gabarito'">5 nombres posibles</h2></div>
+  <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px">
+    <div style="background:#FFFFFF;border:2px solid #B4452A;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px">
+      <div style="font:700 12px 'Figtree';letter-spacing:.12em;color:#B4452A;text-transform:uppercase">Recomendado</div>
+      <div style="font:800 34px/1 'Gabarito'">Al Día</div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038">"Estar al día" con los pagos, los números y lo que se dice de tu marca. Sirve para las 3 apps.</p>
+      <p style="margin:0;font-size:14px;color:#6B5B50">Se dice igual en AR, CL y UY.</p>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px">
+      <div style="font:700 12px 'Figtree';letter-spacing:.12em;color:#6B5B50;text-transform:uppercase">Alternativa</div>
+      <div style="font:800 34px/1 'Gabarito'">Dale</div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038">El "sí, vamos" del Cono Sur. Muy cálido y cercano.</p>
+      <p style="margin:0;font-size:14px;color:#6B5B50">Muy usado en AR y UY; en CL se entiende bien. Es una palabra muy común, así que va a costar más registrarlo.</p>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px">
+      <div style="font:700 12px 'Figtree';letter-spacing:.12em;color:#6B5B50;text-transform:uppercase">Alternativa</div>
+      <div style="font:800 34px/1 'Gabarito'">Tranqui</div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038">Nombra la sensación que se vende: tener todo resuelto.</p>
+      <p style="margin:0;font-size:14px;color:#6B5B50">Coloquial; puede sonar poco serio para pymes.</p>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px">
+      <div style="font:700 12px 'Figtree';letter-spacing:.12em;color:#6B5B50;text-transform:uppercase">Solo para cobros</div>
+      <div style="font:800 34px/1 'Gabarito'">Cuentas Claras</div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038">Del refrán "cuentas claras conservan la amistad". Perfecto para cobrar sin incomodar.</p>
+      <p style="margin:0;font-size:14px;color:#6B5B50">Largo para usarlo de paraguas.</p>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px">
+      <div style="font:700 12px 'Figtree';letter-spacing:.12em;color:#6B5B50;text-transform:uppercase">Solo para cobros</div>
+      <div style="font:800 34px/1 'Gabarito'">Puntual</div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038">Dice exactamente lo que hace. Fácil de recordar.</p>
+      <p style="margin:0;font-size:14px;color:#6B5B50">Más frío; no encaja con voz ni IA.</p>
+    </div>
+  </div>
+  <div style="background:#2A1E18;color:#FFFFFF;border-radius:20px;padding:28px 32px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px">
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="font:700 13px 'Figtree';letter-spacing:.14em;text-transform:uppercase;color:#FFFFFF">Recomendación: paraguas</div>
+      <div style="font:800 30px/1.1 'Gabarito';color:#FFFFFF">Al Día Cobros · Al Día Voz · Al Día IA</div>
+    </div>
+    <ul style="margin:0;padding-left:18px;font-size:16px;line-height:1.6;color:#FFFFFF">
+      <li>Una sola marca para promocionar: cada app le suma visibilidad a las otras dos.</li>
+      <li>El nombre de cada app dice lo que hace; no hace falta explicarlo.</li>
+      <li>Cada app sigue siendo independiente (su propia landing, su login y sus usuarios).</li>
+      <li>Antes de decidir: revisar el dominio y el registro de la marca en AR, CL y UY. No lo verifiqué.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="B" style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;align-items:baseline;gap:14px"><span style="font:800 15px 'Gabarito';background:#2A1E18;color:#fff;padding:6px 10px;border-radius:8px">B</span><h2 style="margin:0;font:700 32px 'Gabarito'">3 direcciones de identidad</h2><span style="font-size:16px;color:#6B5B50">Ninguna usa azules, celestes ni la idea de brújula.</span></div>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:start">
+
+    <div id="1a" style="background:#FAF6F0;border:2px solid #B4452A;border-radius:24px;overflow:hidden;display:flex;flex-direction:column">
+      <div style="padding:24px;display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:700 13px 'Figtree';background:#B4452A;color:#fff;padding:5px 10px;border-radius:99px">1a · Recomendada</span><span style="font-size:13px;color:#6B5B50">Terracota</span></div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:40px;height:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px"><div style="width:32px;height:16px;border-radius:16px 16px 0 0;background:#B4452A"></div><div style="width:40px;height:4px;border-radius:2px;background:#B4452A"></div></div>
+          <div style="font:800 40px/1 'Gabarito';color:#2A1E18;letter-spacing:-.02em">Al Día</div>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038">Un sol que sale sobre el horizonte: empezar el día con todo en orden. Cálida, como la tierra y la arcilla.</p>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div style="font:600 12px 'Figtree';letter-spacing:.1em;text-transform:uppercase;color:#6B5B50">Claro</div>
+          <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px">
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#B4452A"></div><span style="font:500 11px 'Figtree';color:#4E4038">#B4452A</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#E2A33A"></div><span style="font:500 11px 'Figtree';color:#4E4038">#E2A33A</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#2A1E18"></div><span style="font:500 11px 'Figtree';color:#4E4038">#2A1E18</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#F5E2D7;border:1px solid #E8DCD0"></div><span style="font:500 11px 'Figtree';color:#4E4038">#F5E2D7</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#FAF6F0;border:1px solid #E8DCD0"></div><span style="font:500 11px 'Figtree';color:#4E4038">#FAF6F0</span></div>
+          </div>
+          <div style="font:600 12px 'Figtree';letter-spacing:.1em;text-transform:uppercase;color:#6B5B50;margin-top:6px">Oscuro</div>
+          <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px">
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#C4532D"></div><span style="font:500 11px 'Figtree';color:#4E4038">#C4532D</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#E2A33A"></div><span style="font:500 11px 'Figtree';color:#4E4038">#E2A33A</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#33281F"></div><span style="font:500 11px 'Figtree';color:#4E4038">#33281F</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#29201A"></div><span style="font:500 11px 'Figtree';color:#4E4038">#29201A</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#1C1511"></div><span style="font:500 11px 'Figtree';color:#4E4038">#1C1511</span></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;border-top:1px solid #E8DCD0;padding-top:14px">
+          <div style="font:800 24px 'Gabarito'">Gabarito <span style="font:500 13px 'Figtree';color:#6B5B50">títulos</span></div>
+          <div style="font:500 17px 'Figtree'">Figtree <span style="font-size:13px;color:#6B5B50">textos e interfaz</span></div>
+          <div style="font-size:13px;color:#6B5B50">Íconos: Lucide (gratis), línea de 2 px, puntas redondeadas.</div>
+        </div>
+        <div style="font-size:14px;color:#4E4038"><b>Tono:</b> ordenada, cálida, de confianza. Como la vecina que lleva las cuentas al día.</div>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+        <div style="background:#FFFFFF;padding:18px;display:flex;flex-direction:column;gap:10px;border-top:1px solid #E8DCD0">
+          <div style="background:#B4452A;color:#FFFFFF;font:700 15px 'Figtree';border-radius:12px;padding:12px;text-align:center">Probar Al Día</div>
+          <span style="align-self:flex-start;font:600 12px 'Figtree';background:#F8DCD2;color:#8A2D14;padding:4px 10px;border-radius:99px">Vencido</span>
+        </div>
+        <div style="background:#1C1511;padding:18px;display:flex;flex-direction:column;gap:10px">
+          <div style="background:#C4532D;color:#FFFFFF;font:700 15px 'Figtree';border-radius:12px;padding:12px;text-align:center">Probar Al Día</div>
+          <span style="align-self:flex-start;font:600 12px 'Figtree';background:#6E2B19;color:#FFFFFF;padding:4px 10px;border-radius:99px">Vencido</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="1b" style="background:#FBF6F5;border:1px solid #E9DCE1;border-radius:24px;overflow:hidden;display:flex;flex-direction:column">
+      <div style="padding:24px;display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:700 13px 'Onest';background:#8E2F5E;color:#fff;padding:5px 10px;border-radius:99px">1b</span><span style="font:400 13px 'Onest';color:#6A5560">Ciruela y coral</span></div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:36px;height:36px;border-radius:18px 18px 18px 4px;background:#8E2F5E"></div>
+          <div style="font:400 40px/1 'Young Serif';color:#261820">Dale</div>
+        </div>
+        <p style="margin:0;font:400 15px/1.5 'Onest';color:#4A3842">Un globo de diálogo: la marca que te habla como una amiga. Con más personalidad y un toque de revista.</p>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div style="font:600 12px 'Onest';letter-spacing:.1em;text-transform:uppercase;color:#6A5560">Claro</div>
+          <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px">
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#8E2F5E"></div><span style="font:500 11px 'Onest';color:#4A3842">#8E2F5E</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#F0745A"></div><span style="font:500 11px 'Onest';color:#4A3842">#F0745A</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#261820"></div><span style="font:500 11px 'Onest';color:#4A3842">#261820</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#F5E4EC;border:1px solid #E9DCE1"></div><span style="font:500 11px 'Onest';color:#4A3842">#F5E4EC</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#FBF6F5;border:1px solid #E9DCE1"></div><span style="font:500 11px 'Onest';color:#4A3842">#FBF6F5</span></div>
+          </div>
+          <div style="font:600 12px 'Onest';letter-spacing:.1em;text-transform:uppercase;color:#6A5560;margin-top:6px">Oscuro</div>
+          <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px">
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#B0457A"></div><span style="font:500 11px 'Onest';color:#4A3842">#B0457A</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#F0745A"></div><span style="font:500 11px 'Onest';color:#4A3842">#F0745A</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#36242E"></div><span style="font:500 11px 'Onest';color:#4A3842">#36242E</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#2A1C24"></div><span style="font:500 11px 'Onest';color:#4A3842">#2A1C24</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#1C1218"></div><span style="font:500 11px 'Onest';color:#4A3842">#1C1218</span></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;border-top:1px solid #E9DCE1;padding-top:14px">
+          <div style="font:400 24px 'Young Serif'">Young Serif <span style="font:500 13px 'Onest';color:#6A5560">títulos</span></div>
+          <div style="font:500 17px 'Onest'">Onest <span style="font-size:13px;color:#6A5560">textos e interfaz</span></div>
+          <div style="font:400 13px 'Onest';color:#6A5560">Íconos: Phosphor (gratis), estilo relleno suave.</div>
+        </div>
+        <div style="font:400 14px 'Onest';color:#4A3842"><b>Tono:</b> cercana, con chispa, femenina sin ser rosa infantil.</div>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+        <div style="background:#FFFFFF;padding:18px;display:flex;flex-direction:column;gap:10px;border-top:1px solid #E9DCE1">
+          <div style="background:#8E2F5E;color:#FFFFFF;font:700 15px 'Onest';border-radius:99px;padding:12px;text-align:center">Probar Dale</div>
+          <span style="align-self:flex-start;font:600 12px 'Onest';background:#FDE3DC;color:#8A2D14;padding:4px 10px;border-radius:99px">Vencido</span>
+        </div>
+        <div style="background:#1C1218;padding:18px;display:flex;flex-direction:column;gap:10px">
+          <div style="background:#B0457A;color:#FFFFFF;font:700 15px 'Onest';border-radius:99px;padding:12px;text-align:center">Probar Dale</div>
+          <span style="align-self:flex-start;font:600 12px 'Onest';background:#6E2B19;color:#FFFFFF;padding:4px 10px;border-radius:99px">Vencido</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="1c" style="background:#FBF7EC;border:1px solid #E6DDC8;border-radius:24px;overflow:hidden;display:flex;flex-direction:column">
+      <div style="padding:24px;display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:700 13px 'Instrument Sans';background:#5A3A22;color:#fff;padding:5px 10px;border-radius:99px">1c</span><span style="font:400 13px 'Instrument Sans';color:#665A45">Mostaza y cacao</span></div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="width:36px;display:flex;flex-direction:column;gap:5px"><div style="width:30px;height:10px;border-radius:5px;background:#5A3A22"></div><div style="width:30px;height:10px;border-radius:5px;background:#E9B23C;margin-left:6px"></div></div>
+          <div style="font:400 46px/1 'Instrument Serif';color:#2B2416">Tranqui</div>
+        </div>
+        <p style="margin:0;font:400 15px/1.5 'Instrument Sans';color:#4A3F2C">Dos barras en equilibrio: todo en su lugar. Sobria y editorial, la más "pyme seria" de las tres.</p>
+        <div style="display:flex;flex-direction:column;gap:6px">
+          <div style="font:600 12px 'Instrument Sans';letter-spacing:.1em;text-transform:uppercase;color:#665A45">Claro</div>
+          <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px">
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#5A3A22"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#5A3A22</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#E9B23C"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#E9B23C</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#2B2416"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#2B2416</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#F4EAD0;border:1px solid #E6DDC8"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#F4EAD0</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#FBF7EC;border:1px solid #E6DDC8"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#FBF7EC</span></div>
+          </div>
+          <div style="font:600 12px 'Instrument Sans';letter-spacing:.1em;text-transform:uppercase;color:#665A45;margin-top:6px">Oscuro</div>
+          <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px">
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#E9B23C"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#E9B23C</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#8A5A36"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#8A5A36</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#332A1C"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#332A1C</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#261F15"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#261F15</span></div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="height:40px;border-radius:8px;background:#19140D"></div><span style="font:500 11px 'Instrument Sans';color:#4A3F2C">#19140D</span></div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;border-top:1px solid #E6DDC8;padding-top:14px">
+          <div style="font:400 28px 'Instrument Serif'">Instrument Serif <span style="font:500 13px 'Instrument Sans';color:#665A45">títulos</span></div>
+          <div style="font:500 17px 'Instrument Sans'">Instrument Sans <span style="font-size:13px;color:#665A45">textos e interfaz</span></div>
+          <div style="font:400 13px 'Instrument Sans';color:#665A45">Íconos: Tabler (gratis), línea fina 1,5 px.</div>
+        </div>
+        <div style="font:400 14px 'Instrument Sans';color:#4A3F2C"><b>Tono:</b> calma, sobria, de confianza. Menos juguetona.</div>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr)">
+        <div style="background:#FFFFFF;padding:18px;display:flex;flex-direction:column;gap:10px;border-top:1px solid #E6DDC8">
+          <div style="background:#5A3A22;color:#FFFFFF;font:600 15px 'Instrument Sans';border-radius:10px;padding:12px;text-align:center">Probar Tranqui</div>
+          <span style="align-self:flex-start;font:600 12px 'Instrument Sans';background:#F8DCD2;color:#8A2D14;padding:4px 10px;border-radius:99px">Vencido</span>
+        </div>
+        <div style="background:#19140D;padding:18px;display:flex;flex-direction:column;gap:10px">
+          <div style="background:#E9B23C;color:#19140D;font:600 15px 'Instrument Sans';border-radius:10px;padding:12px;text-align:center">Probar Tranqui</div>
+          <span style="align-self:flex-start;font:600 12px 'Instrument Sans';background:#6E2B19;color:#FFFFFF;padding:4px 10px;border-radius:99px">Vencido</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="C" style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap"><span style="font:800 15px 'Gabarito';background:#2A1E18;color:#fff;padding:6px 10px;border-radius:8px">C</span><h2 style="margin:0;font:700 32px 'Gabarito'">Al Día Cobros · landing y app</h2><span style="font-size:16px;color:#6B5B50">En el celular, porque el diseño arranca por ahí. Todos los botones responden. Los clientes son datos de ejemplo.</span></div>
+  <div style="display:flex;gap:32px;align-items:flex-start">
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font:600 13px 'Figtree';color:#6B5B50">Landing · 390 px</div>
+      <div style="width:390px;background:#FAF6F0;border-radius:32px;overflow:hidden;box-shadow:0 20px 50px rgba(42,30,24,.14);border:1px solid #E8DCD0">
+        <div style="background:#2A1E18;color:#FFFFFF;padding:18px 20px 36px;display:flex;flex-direction:column;gap:28px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="display:flex;align-items:center;gap:8px"><div style="width:26px;display:flex;flex-direction:column;align-items:center;gap:3px"><div style="width:20px;height:10px;border-radius:10px 10px 0 0;background:#E8724F"></div><div style="width:26px;height:3px;border-radius:2px;background:#E8724F"></div></div><span style="font:800 19px 'Gabarito';color:#FFFFFF">Al Día <span style="font-weight:500">Cobros</span></span></div>
+            <a href="#precios-cobros" style="color:#FFFFFF;text-decoration:none;font:700 14px 'Figtree';border:1.5px solid rgba(255,255,255,.7);border-radius:99px;padding:9px 14px">Entrar</a>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="font:700 12px 'Figtree';letter-spacing:.14em;text-transform:uppercase;color:#FFFFFF">Para estéticas, profesionales y talleres</div>
+            <h3 style="margin:0;font:800 40px/1.04 'Gabarito';color:#FFFFFF;letter-spacing:-.02em;text-wrap:balance">Cobrá a tiempo sin perseguir a nadie.</h3>
+            <p style="margin:0;font-size:17px;line-height:1.5;color:#FFFFFF">Al Día les avisa por mail a tus clientes cuándo les toca pagar. Vos atendés; los recordatorios salen solos.</p>
+            <a href="#precios-cobros" style="display:flex;justify-content:center;align-items:center;min-height:54px;border-radius:14px;background:#C4532D;color:#FFFFFF;font:700 17px 'Figtree';text-decoration:none">Ver planes desde USD 3</a>
+          </div>
+          <div style="background:#FFFFFF;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:10px;color:#2A1E18">
+            <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:15px">Recordatorios de hoy</b><span style="font:600 12px 'Figtree';background:#F5E2D7;color:#8A2D14;padding:4px 10px;border-radius:99px">Ejemplo</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:14px;border-top:1px solid #E8DCD0;padding-top:10px"><span>Marina G. · Pack 8 sesiones</span><span style="color:#6B5B50">Enviado 9:00</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:14px;border-top:1px solid #E8DCD0;padding-top:10px"><span>Lucía R. · Mensual</span><span style="color:#6B5B50">Enviado 9:00</span></div>
+            <div style="display:flex;justify-content:space-between;font-size:14px;border-top:1px solid #E8DCD0;padding-top:10px"><span>Sofía P. · Cumpleaños</span><span style="color:#6B5B50">Saludo 8:30</span></div>
+          </div>
+        </div>
+        <div style="padding:36px 20px;display:flex;flex-direction:column;gap:14px">
+          <div style="font:700 12px 'Figtree';letter-spacing:.14em;text-transform:uppercase;color:#B4452A">Qué hace por vos</div>
+          <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:18px;padding:20px;display:flex;gap:14px;align-items:flex-start">
+            <div style="flex-shrink:0;width:40px;height:40px;border-radius:12px;background:#F5E2D7;display:flex;align-items:center;justify-content:center;font:800 18px 'Gabarito';color:#B4452A">1</div>
+            <div style="display:flex;flex-direction:column;gap:4px"><b style="font:700 18px 'Gabarito'">Recordatorios automáticos</b><span style="font-size:15px;line-height:1.5;color:#4E4038">Cargás la fecha de pago una vez y el mail sale solo, con un tono amable que no incomoda.</span></div>
+          </div>
+          <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:18px;padding:20px;display:flex;gap:14px;align-items:flex-start">
+            <div style="flex-shrink:0;width:40px;height:40px;border-radius:12px;background:#F5E2D7;display:flex;align-items:center;justify-content:center;font:800 18px 'Gabarito';color:#B4452A">2</div>
+            <div style="display:flex;flex-direction:column;gap:4px"><b style="font:700 18px 'Gabarito'">La ficha de cada cliente</b><span style="font-size:15px;line-height:1.5;color:#4E4038">Contacto, plan, fecha de pago, tratamientos y consultas. Todo en un lugar, sin planillas.</span></div>
+          </div>
+          <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:18px;padding:20px;display:flex;gap:14px;align-items:flex-start">
+            <div style="flex-shrink:0;width:40px;height:40px;border-radius:12px;background:#F5E2D7;display:flex;align-items:center;justify-content:center;font:800 18px 'Gabarito';color:#B4452A">3</div>
+            <div style="display:flex;flex-direction:column;gap:4px"><b style="font:700 18px 'Gabarito'">Saludo de cumpleaños</b><span style="font-size:15px;line-height:1.5;color:#4E4038">Tus clientes reciben un mail el día de su cumple. Un detalle que se recuerda.</span></div>
+          </div>
+        </div>
+        <div id="precios-cobros" style="padding:8px 20px 36px;display:flex;flex-direction:column;gap:16px">
+          <h3 style="margin:0;font:800 30px/1.1 'Gabarito';letter-spacing:-.01em">Elegí tu plan</h3>
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:#EFE5DA;border-radius:14px;padding:4px;gap:4px">
+            <button type="button" onClick="{{ setMensual }}" style="border:0;cursor:pointer;min-height:44px;border-radius:11px;font:700 15px 'Figtree';background:{{ mBg }};color:{{ mFg }}">Mensual</button>
+            <button type="button" onClick="{{ setAnual }}" style="border:0;cursor:pointer;min-height:44px;border-radius:11px;font:700 15px 'Figtree';background:{{ aBg }};color:{{ aFg }}">Anual · 2 meses sin cargo</button>
+          </div>
+          <sc-for list="{{ plans }}" as="p" hint-placeholder-count="3">
+            <button type="button" onClick="{{ p.onPick }}" style="text-align:left;cursor:pointer;font-family:'Figtree';background:#FFFFFF;border:2px solid {{ p.border }};border-radius:18px;padding:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#2A1E18">
+              <span style="display:flex;flex-direction:column;gap:3px"><b style="font:800 20px 'Gabarito'">{{ p.n }}</b><span style="font-size:14px;color:#6B5B50">Hasta {{ p.c }} clientes</span></span>
+              <span style="display:flex;flex-direction:column;align-items:flex-end;gap:3px"><b style="font:800 22px 'Gabarito';white-space:nowrap">{{ p.price }}</b><span style="font-size:13px;color:#6B5B50;white-space:nowrap">{{ p.sub }}</span></span>
+            </button>
+          </sc-for>
+          <p style="margin:0;font-size:13px;line-height:1.5;color:#6B5B50">Los 2 meses sin cargo aplican solo al plan anual pagado por adelantado. No hay meses gratis de entrada.</p>
+          <sc-if value="{{ step0 }}" hint-placeholder-val="{{ true }}">
+            <button type="button" onClick="{{ onBuy }}" style="border:0;cursor:pointer;min-height:56px;border-radius:14px;background:#B4452A;color:#FFFFFF;font:700 17px 'Figtree'">{{ ctaLabel }}</button>
+          </sc-if>
+          <sc-if value="{{ step1 }}" hint-placeholder-val="{{ false }}">
+            <form onSubmit="{{ onSubmit }}" noValidate="{{ true }}" style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px">
+              <b style="font:700 16px 'Figtree'">{{ formTitle }}</b>
+              <label style="font-size:14px;font-weight:500">Nombre</label>
+              <input type="text" value="{{ nombre }}" onChange="{{ onNombre }}" placeholder="Tu nombre" style="font:inherit;font-size:16px;padding:14px;border:1.5px solid #D9CBBE;border-radius:12px;background:#FFFFFF;color:#2A1E18">
+              <label style="font-size:14px;font-weight:500">Email</label>
+              <input type="email" value="{{ email }}" onChange="{{ onEmail }}" placeholder="vos@tunegocio.com" style="font:inherit;font-size:16px;padding:14px;border:1.5px solid #D9CBBE;border-radius:12px;background:#FFFFFF;color:#2A1E18">
+              <sc-if value="{{ err }}" hint-placeholder-val="{{ false }}"><p style="margin:0;font-size:14px;color:#9B2C1F">Revisá tu nombre y que el email esté bien escrito.</p></sc-if>
+              <button type="submit" style="border:0;cursor:pointer;min-height:54px;border-radius:14px;background:#B4452A;color:#FFFFFF;font:700 17px 'Figtree'">Continuar al pago</button>
+              <button type="button" onClick="{{ onBack }}" style="border:0;background:transparent;cursor:pointer;font:600 14px 'Figtree';color:#6B5B50;min-height:44px">Cambiar de plan</button>
+            </form>
+          </sc-if>
+          <sc-if value="{{ step2 }}" hint-placeholder-val="{{ false }}">
+            <div style="background:#E3EEDF;color:#2D5527;border-radius:14px;padding:16px;font-size:15px;line-height:1.5"><b>Listo, {{ nombre }}.</b> Acá pasarías al pago del plan {{ planName }}. <button type="button" onClick="{{ onReset }}" style="border:0;background:transparent;cursor:pointer;font:700 15px 'Figtree';color:#2D5527;text-decoration:underline;padding:0">Volver</button></div>
+          </sc-if>
+          <p style="margin:0;font-size:13px;color:#6B5B50;text-align:center">Mercado Pago, tarjeta o PayPal</p>
+        </div>
+        <div style="background:#2A1E18;color:#FFFFFF;padding:24px 20px;font-size:13px;line-height:1.6;text-align:center">Al Día Cobros · Los avisos salen por mail.</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font:600 13px 'Figtree';color:#6B5B50">App · Clientes · modo claro</div>
+      <div style="width:390px;height:800px;background:#FAF6F0;border-radius:32px;overflow:hidden;box-shadow:0 20px 50px rgba(42,30,24,.14);border:1px solid #E8DCD0;display:flex;flex-direction:column;position:relative">
+        <div style="padding:20px 20px 12px;display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="display:flex;flex-direction:column;gap:2px"><span style="font:500 13px 'Figtree';color:#6B5B50">Al Día Cobros</span><b style="font:800 30px/1 'Gabarito';color:#2A1E18">Clientes</b></div>
+            <button type="button" onClick="{{ onNew }}" style="border:0;cursor:pointer;min-height:44px;padding:0 16px;border-radius:12px;background:#B4452A;color:#FFFFFF;font:700 15px 'Figtree'">+ Nuevo</button>
+          </div>
+          <input type="search" value="{{ q }}" onChange="{{ onQ }}" placeholder="Buscar por nombre" style="font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid #E1D3C6;border-radius:12px;background:#FFFFFF;color:#2A1E18;width:100%">
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+              <button type="button" onClick="{{ f.on }}" style="border:1px solid {{ f.lBd }};cursor:pointer;min-height:36px;padding:0 12px;border-radius:99px;font:600 14px 'Figtree';background:{{ f.lBg }};color:{{ f.lFg }}">{{ f.label }} · {{ f.count }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <div style="flex:1;overflow:auto;padding:4px 20px 20px;display:flex;flex-direction:column;gap:10px">
+          <sc-for list="{{ rows }}" as="c" hint-placeholder-count="5">
+            <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px">
+              <div style="display:flex;gap:12px;align-items:center">
+                <div style="flex-shrink:0;width:42px;height:42px;border-radius:21px;background:#F5E2D7;color:#8A2D14;display:flex;align-items:center;justify-content:center;font:700 15px 'Figtree'">{{ c.ini }}</div>
+                <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px"><b style="font:700 16px 'Figtree';color:#2A1E18">{{ c.n }}</b><span style="font-size:13px;color:#6B5B50">{{ c.plan }} · paga el {{ c.d }}</span></div>
+                <span style="flex-shrink:0;font:600 12px 'Figtree';padding:5px 10px;border-radius:99px;background:{{ c.lb }};color:{{ c.lf }}">{{ c.st }}</span>
+              </div>
+              <sc-if value="{{ c.late }}" hint-placeholder-val="{{ false }}">
+                <button type="button" onClick="{{ c.onRemind }}" style="border:1.5px solid #B4452A;cursor:pointer;min-height:44px;border-radius:12px;background:{{ c.btnBgL }};color:{{ c.btnFgL }};font:700 14px 'Figtree'">{{ c.btn }}</button>
+              </sc-if>
+            </div>
+          </sc-for>
+          <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}"><p style="margin:24px 0;text-align:center;color:#6B5B50;font-size:15px">No hay clientes con ese filtro.</p></sc-if>
+        </div>
+        <sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;left:16px;right:16px;bottom:84px;background:#2A1E18;color:#FFFFFF;border-radius:14px;padding:14px 16px;font-size:14px;line-height:1.4">{{ toast }}</div>
+        </sc-if>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #E8DCD0;background:#FFFFFF">
+          <button type="button" style="border:0;background:transparent;min-height:64px;font:700 13px 'Figtree';color:#B4452A;cursor:pointer">Clientes</button>
+          <button type="button" onClick="{{ onNavCobros }}" style="border:0;background:transparent;min-height:64px;font:600 13px 'Figtree';color:#6B5B50;cursor:pointer">Cobros</button>
+          <button type="button" onClick="{{ onNavCumple }}" style="border:0;background:transparent;min-height:64px;font:600 13px 'Figtree';color:#6B5B50;cursor:pointer">Cumpleaños</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:10px">
+      <div style="font:600 13px 'Figtree';color:#6B5B50">App · Clientes · modo oscuro</div>
+      <div style="width:390px;height:800px;background:#1C1511;border-radius:32px;overflow:hidden;box-shadow:0 20px 50px rgba(42,30,24,.24);display:flex;flex-direction:column;position:relative">
+        <div style="padding:20px 20px 12px;display:flex;flex-direction:column;gap:14px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div style="display:flex;flex-direction:column;gap:2px"><span style="font:500 13px 'Figtree';color:#FFFFFF">Al Día Cobros</span><b style="font:800 30px/1 'Gabarito';color:#FFFFFF">Clientes</b></div>
+            <button type="button" onClick="{{ onNew }}" style="border:0;cursor:pointer;min-height:44px;padding:0 16px;border-radius:12px;background:#C4532D;color:#FFFFFF;font:700 15px 'Figtree'">+ Nuevo</button>
+          </div>
+          <input type="search" value="{{ q }}" onChange="{{ onQ }}" placeholder="Buscar por nombre" style="font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid #4A3B30;border-radius:12px;background:#29201A;color:#FFFFFF;width:100%">
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <sc-for list="{{ filters }}" as="f" hint-placeholder-count="4">
+              <button type="button" onClick="{{ f.on }}" style="border:1px solid {{ f.dBd }};cursor:pointer;min-height:36px;padding:0 12px;border-radius:99px;font:600 14px 'Figtree';background:{{ f.dBg }};color:#FFFFFF">{{ f.label }} · {{ f.count }}</button>
+            </sc-for>
+          </div>
+        </div>
+        <div style="flex:1;overflow:auto;padding:4px 20px 20px;display:flex;flex-direction:column;gap:10px">
+          <sc-for list="{{ rows }}" as="c" hint-placeholder-count="5">
+            <div style="background:#29201A;border:1px solid #3E3128;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px">
+              <div style="display:flex;gap:12px;align-items:center">
+                <div style="flex-shrink:0;width:42px;height:42px;border-radius:21px;background:#4A2C20;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font:700 15px 'Figtree'">{{ c.ini }}</div>
+                <div style="flex:1;min-width:0;display:flex;flex-direction:column;gap:2px"><b style="font:700 16px 'Figtree';color:#FFFFFF">{{ c.n }}</b><span style="font-size:13px;color:#FFFFFF;opacity:.82">{{ c.plan }} · paga el {{ c.d }}</span></div>
+                <span style="flex-shrink:0;font:600 12px 'Figtree';padding:5px 10px;border-radius:99px;background:{{ c.db }};color:#FFFFFF">{{ c.st }}</span>
+              </div>
+              <sc-if value="{{ c.late }}" hint-placeholder-val="{{ false }}">
+                <button type="button" onClick="{{ c.onRemind }}" style="border:1.5px solid #C4532D;cursor:pointer;min-height:44px;border-radius:12px;background:{{ c.btnBgD }};color:#FFFFFF;font:700 14px 'Figtree'">{{ c.btn }}</button>
+              </sc-if>
+            </div>
+          </sc-for>
+          <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}"><p style="margin:24px 0;text-align:center;color:#FFFFFF;font-size:15px">No hay clientes con ese filtro.</p></sc-if>
+        </div>
+        <sc-if value="{{ hasToast }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;left:16px;right:16px;bottom:84px;background:#FAF6F0;color:#2A1E18;border-radius:14px;padding:14px 16px;font-size:14px;line-height:1.4">{{ toast }}</div>
+        </sc-if>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #3E3128;background:#29201A">
+          <button type="button" style="border:0;background:transparent;min-height:64px;font:700 13px 'Figtree';color:#FFFFFF;cursor:pointer;text-decoration:underline;text-decoration-color:#E8724F;text-decoration-thickness:3px;text-underline-offset:8px">Clientes</button>
+          <button type="button" onClick="{{ onNavCobros }}" style="border:0;background:transparent;min-height:64px;font:600 13px 'Figtree';color:#FFFFFF;opacity:.8;cursor:pointer">Cobros</button>
+          <button type="button" onClick="{{ onNavCumple }}" style="border:0;background:transparent;min-height:64px;font:600 13px 'Figtree';color:#FFFFFF;opacity:.8;cursor:pointer">Cumpleaños</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="D" style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap"><span style="font:800 15px 'Gabarito';background:#2A1E18;color:#fff;padding:6px 10px;border-radius:8px">D</span><h2 style="margin:0;font:700 32px 'Gabarito'">La familia Al Día</h2><span style="font-size:16px;color:#6B5B50">Las tres comparten el símbolo, la tipografía y la base crema. Cada una tiene su propio color y una señal arriba del horizonte.</span></div>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px">
+    <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;gap:14px;align-items:center">
+        <div style="width:72px;height:72px;border-radius:20px;background:#B4452A;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px"><div style="width:34px;height:17px;border-radius:17px 17px 0 0;background:#FFFFFF"></div><div style="width:42px;height:4px;border-radius:2px;background:#FFFFFF"></div></div>
+        <div style="display:flex;flex-direction:column"><span style="font:800 26px/1.1 'Gabarito'">Al Día <span style="color:#B4452A">Cobros</span></span><span style="font-size:14px;color:#6B5B50">La principal</span></div>
+      </div>
+      <div style="display:flex;gap:6px"><div style="width:36px;height:36px;border-radius:10px;background:#B4452A"></div><div style="width:36px;height:36px;border-radius:10px;background:#F5E2D7"></div><span style="font:500 13px 'Figtree';color:#4E4038;align-self:center">Terracota #B4452A</span></div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038"><b>Personalidad:</b> firme y amable. Pone orden sin sonar a cobrador.</p>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;gap:14px;align-items:center">
+        <div style="width:72px;height:72px;border-radius:20px;background:#E2A33A;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px"><div style="display:flex;gap:4px;align-items:flex-end;height:17px"><div style="width:6px;height:9px;border-radius:3px;background:#2A1E18"></div><div style="width:6px;height:17px;border-radius:3px;background:#2A1E18"></div><div style="width:6px;height:12px;border-radius:3px;background:#2A1E18"></div></div><div style="width:42px;height:4px;border-radius:2px;background:#2A1E18"></div></div>
+        <div style="display:flex;flex-direction:column"><span style="font:800 26px/1.1 'Gabarito'">Al Día <span style="color:#9A6512">Voz</span></span><span style="font-size:14px;color:#6B5B50">Reportes con voz</span></div>
+      </div>
+      <div style="display:flex;gap:6px"><div style="width:36px;height:36px;border-radius:10px;background:#E2A33A"></div><div style="width:36px;height:36px;border-radius:10px;background:#FBEBC6"></div><span style="font:500 13px 'Figtree';color:#4E4038;align-self:center">Mostaza #E2A33A</span></div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038"><b>Personalidad:</b> conversadora. Te explica los números como si te los contara un amigo.</p>
+    </div>
+    <div style="background:#FFFFFF;border:1px solid #E8DCD0;border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;gap:14px;align-items:center">
+        <div style="width:72px;height:72px;border-radius:20px;background:#7B3F6E;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px"><div style="display:flex;gap:5px;align-items:flex-end;height:17px"><div style="width:10px;height:10px;border-radius:5px;background:#FFFFFF"></div><div style="width:10px;height:10px;border-radius:5px;background:#FFFFFF;margin-bottom:7px"></div></div><div style="width:42px;height:4px;border-radius:2px;background:#FFFFFF"></div></div>
+        <div style="display:flex;flex-direction:column"><span style="font:800 26px/1.1 'Gabarito'">Al Día <span style="color:#7B3F6E">IA</span></span><span style="font-size:14px;color:#6B5B50">Qué dicen las IA de tu marca</span></div>
+      </div>
+      <div style="display:flex;gap:6px"><div style="width:36px;height:36px;border-radius:10px;background:#7B3F6E"></div><div style="width:36px;height:36px;border-radius:10px;background:#F0E0EC"></div><span style="font:500 13px 'Figtree';color:#4E4038;align-self:center">Ciruela #7B3F6E</span></div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038"><b>Personalidad:</b> curiosa y observadora. Te cuenta qué vio esta semana, sin tecnicismos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="E" style="display:flex;flex-direction:column;gap:24px">
+  <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap"><span style="font:800 15px 'Gabarito';background:#2A1E18;color:#fff;padding:6px 10px;border-radius:8px">E</span><h2 style="margin:0;font:700 32px 'Gabarito'">Tarjeta ▶ de Al Día Voz</h2><span style="font-size:16px;color:#6B5B50">Reemplaza a la tarjeta azul del Hub. Tocá ▶: {{ vozNote }}</span></div>
+  <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
+    <div style="width:440px;background:#FFFFFF;border:1px solid #E8DCD0;border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:600 13px 'Figtree';color:#6B5B50">Reporte de octubre · Instagram</span><span style="font:600 12px 'Figtree';background:#FBEBC6;color:#6F4600;padding:4px 10px;border-radius:99px">Al Día Voz</span></div>
+      <div style="display:flex;gap:16px;align-items:center">
+        <button type="button" aria-label="{{ lAria }}" onClick="{{ playL }}" style="flex-shrink:0;width:64px;height:64px;border-radius:32px;border:0;cursor:pointer;background:#E2A33A;color:#2A1E18;font:700 24px 'Figtree';display:flex;align-items:center;justify-content:center">{{ lIcon }}</button>
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><b style="font:800 22px/1.15 'Gabarito';color:#2A1E18">Escuchá tu reporte</b><span style="font-size:14px;color:#6B5B50">{{ lStatus }}</span></div>
+      </div>
+      <div style="height:8px;border-radius:4px;background:#F1E6D8;overflow:hidden"><div style="height:8px;border-radius:4px;background:#E2A33A;width:{{ lPct }}"></div></div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#4E4038">"Este mes tu cuenta llegó a más gente que en septiembre. Lo que mejor funcionó fueron los videos cortos…"</p>
+      <span style="font-size:12px;color:#6B5B50">Texto de ejemplo, no son datos reales.</span>
+    </div>
+    <div style="width:440px;background:#29201A;border:1px solid #3E3128;border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><span style="font:600 13px 'Figtree';color:#FFFFFF;opacity:.85">Reporte de octubre · Instagram</span><span style="font:600 12px 'Figtree';background:#5C4312;color:#FFFFFF;padding:4px 10px;border-radius:99px">Al Día Voz</span></div>
+      <div style="display:flex;gap:16px;align-items:center">
+        <button type="button" aria-label="{{ dAria }}" onClick="{{ playD }}" style="flex-shrink:0;width:64px;height:64px;border-radius:32px;border:0;cursor:pointer;background:#E2A33A;color:#1C1511;font:700 24px 'Figtree';display:flex;align-items:center;justify-content:center">{{ dIcon }}</button>
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><b style="font:800 22px/1.15 'Gabarito';color:#FFFFFF">Escuchá tu reporte</b><span style="font-size:14px;color:#FFFFFF;opacity:.85">{{ dStatus }}</span></div>
+      </div>
+      <div style="height:8px;border-radius:4px;background:#3E3128;overflow:hidden"><div style="height:8px;border-radius:4px;background:#E2A33A;width:{{ dPct }}"></div></div>
+      <p style="margin:0;font-size:15px;line-height:1.5;color:#FFFFFF">"Este mes tu cuenta llegó a más gente que en septiembre. Lo que mejor funcionó fueron los videos cortos…"</p>
+      <span style="font-size:12px;color:#FFFFFF;opacity:.75">Texto de ejemplo, no son datos reales.</span>
+    </div>
+  </div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;precio&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;mensual&quot;,&quot;anual&quot;],&quot;default&quot;:&quot;mensual&quot;,&quot;tsType&quot;:&quot;'mensual'|'anual'&quot;,&quot;section&quot;:&quot;Landing&quot;},&quot;voz&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Tarjeta ▶&quot;}}">
+const CL=[
+{id:1,n:'Marina Gómez',plan:'Pack 8 sesiones',d:'05/10',s:'late'},
+{id:2,n:'Julieta Méndez',plan:'Mensual',d:'08/10',s:'late'},
+{id:3,n:'Lucía Ramos',plan:'Mensual',d:'15/10',s:'soon'},
+{id:4,n:'Camila Rojas',plan:'Pack 4 sesiones',d:'16/10',s:'soon'},
+{id:5,n:'Sofía Pereira',plan:'Mensual',d:'01/11',s:'ok'},
+{id:6,n:'Valentina Silva',plan:'Mensual',d:'03/11',s:'ok'},
+{id:7,n:'Ana Torres',plan:'Trimestral',d:'20/12',s:'ok'}];
+const ST={ok:{l:'Al día',lb:'#E3EEDF',lf:'#2D5527',db:'#2F4A2A'},soon:{l:'Por vencer',lb:'#FBEBC6',lf:'#6F4600',db:'#5C4312'},late:{l:'Vencido',lb:'#F8DCD2',lf:'#8A2D14',db:'#6E2B19'}};
+const PL=[{id:'ini',n:'Inicial',c:20,m:3,y:30},{id:'plus',n:'Plus',c:50,m:5,y:50},{id:'pro',n:'Pro',c:150,m:8,y:80}];
+const FI=[['todos','Todos'],['late','Vencidos'],['soon','Por vencer'],['ok','Al día']];
+const TXT='Este mes tu cuenta llegó a más gente que en septiembre. Lo que mejor funcionó fueron los videos cortos con una pregunta al principio. Para noviembre, la recomendación es publicar tres videos por semana y responder los comentarios el mismo día.';
+const DUR=16;
+const usd=v=>'USD '+(Number.isInteger(v)?v:v.toFixed(2).replace('.',','));
+class Component extends DCLogic {
+  state={annual:null,plan:'plus',step:0,nombre:'',email:'',err:false,q:'',filter:'todos',sent:{},toast:'',play:null,t:0};
+  componentWillUnmount(){clearInterval(this.iv);clearTimeout(this.tt);window.speechSynthesis&&window.speechSynthesis.cancel();}
+  showToast(m){clearTimeout(this.tt);this.setState({toast:m});this.tt=setTimeout(()=>this.setState({toast:''}),2600);}
+  stop(){clearInterval(this.iv);this.setState({play:null,t:0});}
+  togglePlay(w){
+    const s=window.speechSynthesis;
+    if(s)s.cancel();
+    if(this.state.play===w){this.stop();return;}
+    clearInterval(this.iv);
+    this.setState({play:w,t:0});
+    if(s&&(this.props.voz??true)){const u=new SpeechSynthesisUtterance(TXT);u.lang='es-AR';u.onend=()=>{if(this.state.play===w)this.stop();};s.speak(u);}
+    this.iv=setInterval(()=>{const t=this.state.t+0.25;if(t>=DUR){if(!s||!(this.props.voz??true)||!s.speaking)this.stop();else this.setState({t:DUR});}else this.setState({t});},250);
+  }
+  renderVals(){
+    const S=this.state,annual=S.annual??(this.props.precio==='anual');
+    const plan=PL.find(p=>p.id===S.plan);
+    const price=p=>annual?usd(p.y)+'/año':usd(p.m)+'/mes';
+    const q=S.q.trim().toLowerCase();
+    const base=CL.filter(c=>!q||c.n.toLowerCase().includes(q));
+    const rows=base.filter(c=>S.filter==='todos'||c.s===S.filter).map(c=>{const st=ST[c.s],sent=!!S.sent[c.id];return{...c,ini:c.n.split(' ').map(w=>w[0]).join(''),st:st.l,lb:st.lb,lf:st.lf,db:st.db,late:c.s==='late',btn:sent?'Recordatorio enviado ✓':'Enviar recordatorio por mail',btnBgL:sent?'#FFFFFF':'#B4452A',btnFgL:sent?'#B4452A':'#FFFFFF',btnBgD:sent?'#29201A':'#C4532D',onRemind:()=>{if(sent)return;this.setState(s=>({sent:{...s.sent,[c.id]:true}}));this.showToast('Listo: le mandamos el recordatorio a '+c.n.split(' ')[0]+' (simulado).');}};});
+    const filters=FI.map(([id,label])=>{const a=S.filter===id;return{label,count:id==='todos'?base.length:base.filter(c=>c.s===id).length,on:()=>this.setState({filter:id}),lBg:a?'#2A1E18':'#FFFFFF',lFg:a?'#FFFFFF':'#2A1E18',lBd:a?'#2A1E18':'#E1D3C6',dBg:a?'#C4532D':'#29201A',dBd:a?'#C4532D':'#4A3B30'};});
+    const pct=w=>S.play===w?Math.round(S.t/DUR*100)+'%':'0%';
+    const tl=t=>'0:'+String(Math.floor(t)).padStart(2,'0');
+    const status=w=>S.play===w?'Reproduciendo · '+tl(S.t)+' / '+tl(DUR):'Te lo explico en palabras simples · '+tl(DUR);
+    return{
+      mBg:annual?'transparent':'#FFFFFF',mFg:annual?'#6B5B50':'#2A1E18',aBg:annual?'#FFFFFF':'transparent',aFg:annual?'#2A1E18':'#6B5B50',
+      setMensual:()=>this.setState({annual:false}),setAnual:()=>this.setState({annual:true}),
+      plans:PL.map(p=>({...p,price:price(p),sub:annual?'Equivale a '+usd(p.y/12)+'/mes':(S.plan===p.id?'Elegido':'Pagás mes a mes'),border:S.plan===p.id?'#B4452A':'#E8DCD0',onPick:()=>this.setState({plan:p.id,step:S.step===2?0:S.step})})),
+      step0:S.step===0,step1:S.step===1,step2:S.step===2,planName:plan.n,
+      ctaLabel:'Quiero el plan '+plan.n+' · '+price(plan),formTitle:'Plan '+plan.n+' · '+price(plan)+'. ¿A qué email te mandamos el acceso?',
+      onBuy:()=>this.setState({step:1}),onBack:()=>this.setState({step:0,err:false}),onReset:()=>this.setState({step:0}),
+      nombre:S.nombre,email:S.email,err:S.err,
+      onNombre:e=>this.setState({nombre:e.target.value}),onEmail:e=>this.setState({email:e.target.value}),
+      onSubmit:e=>{e.preventDefault();const ok=S.nombre.trim().length>1&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(S.email.trim());this.setState(ok?{err:false,step:2}:{err:true});},
+      q:S.q,onQ:e=>this.setState({q:e.target.value}),filters,rows,empty:rows.length===0,
+      onNew:()=>this.showToast('Acá se abre la ficha del cliente nuevo (próxima pantalla).'),
+      onNavCobros:()=>this.showToast('La pantalla Cobros está en el siguiente paso del diseño.'),
+      onNavCumple:()=>this.showToast('La pantalla Cumpleaños está en el siguiente paso del diseño.'),
+      hasToast:!!S.toast,toast:S.toast,
+      playL:()=>this.togglePlay('l'),playD:()=>this.togglePlay('d'),
+      lIcon:S.play==='l'?'❚❚':'▶',dIcon:S.play==='d'?'❚❚':'▶',
+      lAria:S.play==='l'?'Pausar':'Escuchar reporte',dAria:S.play==='d'?'Pausar':'Escuchar reporte',
+      lStatus:status('l'),dStatus:status('d'),lPct:pct('l'),dPct:pct('d'),
+      vozNote:(this.props.voz??true)?'lee el texto en voz alta con la voz del navegador.':'muestra solo el avance (la voz está apagada).'
+    };
+  }
+}
+</script>
+</body>
+</html>
